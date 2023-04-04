@@ -25,7 +25,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitSpyCamera",
 			end
 		end
 		if not loaded then
-			local file = ThirdPerson.mod_path .. "loc/" .. BLT.Localization:get_language().language .. ".txt"
+			local file = SpyCamera.mod_path .. "loc/" .. BLT.Localization:get_language().language .. ".txt"
 			if io.file_is_readable(file) then
 				loc:load_localization_file(file)
 			end
